@@ -1,0 +1,73 @@
+.b-taskboardbase{
+  --taskboard-background:#fff;
+  --taskboard-column-gap:0;
+  --taskboard-column-background:#f7f8f9;
+  --taskboard-column-header-background:#f3f4f5;
+  --taskboard-card-border-top-radius:0;
+  --taskboard-card-border-bottom-radius:0;
+  --taskboard-card-border-left:2px solid currentColor;
+  --border-color:#d8d9da;
+  --details-color:#aaa;
+}
+
+.b-theme-classic .b-taskboardbase{
+  --taskboard-column-header-background:#e0e0e7;
+  --taskboard-column-background:#f0f0f7;
+  --border-color:#b0b0b7;
+}
+
+.b-theme-classic-light .b-taskboardbase{
+  --taskboard-column-header-background:#f9f9f9;
+  --taskboard-column-background:#fcfcfc;
+  --border-color:#e0e0e0;
+}
+
+.b-theme-classic-dark .b-taskboardbase{
+  --taskboard-column-header-background:#38383c;
+  --taskboard-column-background:#44444a;
+  --border-color:#2b2b2f;
+}
+
+.b-theme-material .b-taskboardbase{
+  --taskboard-column-header-background:#fafafa;
+  --taskboard-column-background:#f9f9f9;
+  --border-color:transparent;
+}
+
+.b-taskboard-column-drag-proxy .b-taskboard-column-header,
+.b-taskboard-column-headers{
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.b-taskboard-column-drag-proxy .b-taskboard-column-header{
+  z-index:1;
+}
+
+.b-taskboard-column-header{
+  border-bottom:1px solid var(--border-color);
+}
+
+.b-taskboard-column-header,
+.b-taskboard-column{
+  border-inline-start:1px solid var(--border-color);
+}
+.b-taskboard-column-header.b-last,
+.b-taskboard-column.b-last{
+  border-inline-end:1px solid var(--border-color);
+}
+
+.details{
+  display:grid;
+  grid-template-columns:5em 1fr;
+  margin-top:0.5em;
+  align-items:center;
+  color:var(--details-color);
+}
+.details label{
+  font-size:0.8em;
+}
+.details div{
+  font-size:0.9em;
+}
+
+/*# sourceMappingURL=app.css.map */
